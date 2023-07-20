@@ -8,7 +8,7 @@ import java.awt.Color;
 public class Canhão extends AdvancedRobot {//oferece funcionalidades adicionais e avançadas doq a classe Robot
 
     public void run() {//equivale ao metodo main, igual quando trabalha console Java, a diferença é que esse implementa threads 
-        setColors(Color.darkBlack, Color.black, Color.lightGray, Color.white, Color.green);//personalizando cores do robô
+        setColors(Color.black, Color.black, Color.lightGray, Color.white, Color.green);//personalizando cores do robô
 
         setMaxVelocity(8); // Define a velocidade máxima para 8
 
@@ -33,7 +33,7 @@ public class Canhão extends AdvancedRobot {//oferece funcionalidades adicionais
             setTurnRight(e.getBearing()); // Gira o robô na direção do robô inimigo
             setAhead(distancia - 100); // Move em direção ao robô inimigo com uma distância de segurança
         } else {//senão...
-            setFire(2.5); // Dispara um tiro com potência 1
+            setFire(2.5); // Dispara um tiro com potência 2.5
             setTurnRight(e.getBearing()); // Gira o robô na direção do robô inimigo
             setAhead(100); // Avança 100 pixels
         }
